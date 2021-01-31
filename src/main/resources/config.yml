@@ -1,0 +1,14 @@
+# +--------------------------------------------------------------------------------+ #
+# |                           SoulParty Configuration                              | #
+# |                                                                                | #
+# +--------------------------------------------------------------------------------+ #
+# This file was generated on version 1.1
+# Plugin made by rain_chat
+
+
+Settings:
+  # languages en_En,ru_Ru...
+  default-language: en_En
+
+Party-system:
+  max-party-size: 5

@@ -1,0 +1,50 @@
+Messages:
+  disband: '&7Oh no! &a&l{0} &7the group was disbanded ...'
+  help: Type &b/party help [page] &7to look at the help pages.
+  no-command-permission: You do not have permissions for that command.
+  no-permission: You do not have permissions for &b{0}&7.
+  page-format: '&b{0}. &7{1}'
+  page-help: '&3&lHelp: &7[{0}/{1}]'
+  page-limit: There are only &b{0} &7help pages.
+  page-next: Type &b/party help {0} &7for the next page.
+  page-previous: Type &b/party help {0} &7for the previous page.
+  player-offline: The player &b{0} &7does not seem to be online.
+  player-null: The player named &b{0} does not exist .
+  prefix: '&3&lParty: &7'
+  request-accept: ' &7[&aAccept&7] '
+  request-deny: ' &7[&cDeny&7] '
+  request-denied: You have decided to deny the request.
+  request-disband: Are you sure you want to disband the party? Members of your party
+    may not be happy!
+  request-invite: You have sent an invite request to &b{0}&7.
+  request-invite-self: You can't invite yourself.
+  request-invite-target: You have been invited to join &b{0}&7. Do you wish to join?
+  request-invite-target-not-null: The player &b{0} &7already belongs to a party.
+  request-join: '&b{0} &7has joined the party.'
+  request-join-target: '&7You have joined the &b{0} &7party.'
+  request-kick: Are you sure you want to kick &b{0} &7 from your party?
+  request-kick-self: You can't kick yourself from the party.
+  request-kick-target: You have been kicked from the &b{0} &7party.
+  request-kick-target-self: You have been kick &b{0} &7from your party.
+  request-null: You do not have any pending requests.
+  request-pending: You already have a pending request.
+  tooltip: '&7Click to select.'
+  party-set-owner: You have set the new party owner to &b{0}&7.
+  party-already-owner: You can't set the new owner to yourself.
+  party-create: You have established a new party named &b{0}&7.
+  party-leave: You have left the &7party.
+  party-leave-owner: You can't leave your current party because you are the owner.
+  party-max-claims: Group limit exceeded &e{0} &7players .
+  party-member-null: '&b{0} &7this player is not from your party.'
+  party-not-null: You are already in the party.
+  party-null: You don't have a party.
+  party-owner: You must be the owner of the party to do that action.
+Menu:
+  party:
+    guititle: '{0} Party'
+    information:
+      title: '&e&lInformation'
+      lore:
+        - ''
+        - '&7Owner: &b{owner}'
+        - '&7Members: &e{members}'

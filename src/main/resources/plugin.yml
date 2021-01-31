@@ -1,0 +1,12 @@
+name: SoulParty
+version: ${project.version}
+main: com.rainchat.soulparty.SoulParty
+api-version: 1.16
+authors: [ rain_chat ]
+
+commands:
+  party:
+    description: The party command.
+    aliases:
+      - partys
+      - soulparty
