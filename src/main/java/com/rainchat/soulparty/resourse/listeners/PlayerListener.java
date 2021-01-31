@@ -30,19 +30,4 @@ public class PlayerListener implements Listener {
     public void onLeave(PlayerQuitEvent e){
 
     }
-
-
-    @EventHandler
-    public void onDamage(EntityDamageByEntityEvent e){
-        if (e.getEntity() instanceof Player){
-            Party party = SoulParty.getPluginInstance().getPartyMenager().getParty(((Player) e.getEntity()).getPlayer());
-            for (UUID playerUUID: party.getMembers()){
-                Player player = Bukkit.getPlayer(playerUUID);
-                if (player != ((Player) e.getEntity()).getPlayer()){
-                    assert player != null;
-                    player.damage(e.getDamage());
-                }
-            }
-        }
-    }
 }
