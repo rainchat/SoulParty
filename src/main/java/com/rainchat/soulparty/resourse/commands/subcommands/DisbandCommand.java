@@ -6,7 +6,10 @@ import com.rainchat.soulparty.utilities.general.Chat;
 import com.rainchat.soulparty.utilities.general.Command;
 import com.rainchat.soulparty.utilities.general.Message;
 import com.rainchat.soulparty.utilities.objects.Party;
+import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
+
+import java.util.UUID;
 
 public class DisbandCommand extends Command {
 
@@ -25,6 +28,17 @@ public class DisbandCommand extends Command {
             if (party.getOwner().equals(player.getUniqueId())) {
                 partyManager.remove(party);
                 player.sendMessage(Chat.format(Message.DISBAND.toString().replace("{0}", player.getName())));
+                for (UUID playerMemberUUID: party.getMembers()) {
+                    Player playerMember = Bukkit.getPlayer(playerMemberUUID);
+
+                    if (playerMember != null){
+                        if (playerMember.equals(player)){
+
+                        } else if (playerMember.isOnline()){
+                            player.sendMessage(Chat.format(Message.DISBAND_OTHER.toString().replace("{0}", player.getName())));
+                        }
+                    }
+                }
             } else {
                 player.sendMessage(Chat.format(Message.PARTY_OWNER.toString().replace("{0}", player.getName())));
             }

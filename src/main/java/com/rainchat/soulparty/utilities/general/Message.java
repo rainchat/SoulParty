@@ -6,7 +6,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public enum Message {
-    DISBAND("Messages.disband", "&7Oh no! &a&l{0} &7the group was disbanded ..."),
+    DISBAND("Messages.disband", "&7Oh no! &a&l{0} &7the party was disbanded ..."),
+    DISBAND_OTHER("Messages.disband-other", "&7The party &a&l{0} &7was disbanded, it happens..."),
     HELP("Messages.help", "Type &b/party help [page] &7to look at the help pages."),
     MENU_PARTY_GUITITLE("Menu.party.guititle", "{0} Party"),
     MENU_INFORMATION_TITLE("Menu.party.information.title", "&e&lInformation"),
